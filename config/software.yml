@@ -1,5 +1,5 @@
-perl: /home/earthtest/miniconda3/bin/perl
-python: /home/earthtest/miniconda3/bin/python
+perl: /home/mengxf/miniforge3/envs/perl5.32/bin/perl
+python: /home/mengxf/miniforge3/envs/python3.8/bin/python
 Rscript: /home/earthtest/miniconda3/envs/R4.1.2/bin/Rscript
 convert: /home/earthtest/miniconda3/bin/convert
 svg2png: /usr/bin/rsvg-convert
