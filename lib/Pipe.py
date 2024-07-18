@@ -611,10 +611,10 @@ ln -sf {d_i_picrust}/pathway/Pathway.xls {d_o_picrust}/Pathway.xls
 """
             j_link.add_command(cmd)
 
-        # Report
-        j_report = job.child("report", dir_out, _type="Job")
-        cmd = f"{self.perl} {self.bin}/report.pl -conf {self.f_config} -o {dir_out}"
-        j_report.add_command(cmd)
+        # [240718 不再用这个报告系统] Report
+        # j_report = job.child("report", dir_out, _type="Job")
+        # cmd = f"{self.perl} {self.bin}/report.pl -conf {self.f_config} -o {dir_out}"
+        # j_report.add_command(cmd)
 
         # package
         j_package = job.child('package', dir_out, _type="Job")

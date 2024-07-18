@@ -1,6 +1,6 @@
 perl: /home/mengxf/miniforge3/envs/perl5.32/bin/perl
 python: /home/mengxf/miniforge3/envs/python3.8/bin/python
-Rscript: /home/mengxf/miniforge3/envs/R4.1.2/bin/Rscript
+Rscript: /home/mengxf/miniforge3/envs/R4.3.1/bin/Rscript
 convert: /home/mengxf/miniforge3/envs/tools/bin/convert
 svg2png: /home/mengxf/miniforge3/envs/tools/bin/rsvg-convert
 dos2unix: /home/mengxf/miniforge3/envs/tools/bin/dos2unix
@@ -11,7 +11,7 @@ fastp: /home/jinyu/mambaforge/bin/fastp
 biom: /home/jinyu/mambaforge/envs/qiime2-amplicon-2024.2/bin/biom
 fastqc: /home/jinyu/mambaforge/bin/fastqc
 shell: /usr/bin/bash
-parallel: /usr/bin/parallel
+parallel: /home/mengxf/miniforge3/envs/tools/bin/parallel
 
 # 个人软件/模块
 GeneralPlot: /data/mengxf/Gitee/GeneralPlot/v1.3.3/bin/general_plot.pl
