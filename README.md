@@ -7,9 +7,35 @@
 - [ ] ITS support
 - [ ] nanopore data support
 
-## 更新日志
+# 依赖
+- R
+    - scales=1.3.0
+    - optparse
+    - logging
+    - funr
+    - stringr
+    - yaml
+    - gmodels
+    - vegan
+    - ellipse
+    - ggplot2
+    - ggrepel
+    - ape
+    - GUniFrac
+    - RColorBrewer
+    - pheatmap
+    - magrittr
+    - data.table
+    - hash
+    - Rcpp
+
+- Perl
+  - YAML
+  - JSON
+
+# 更新日志
 20220304
-### update
+## update
 - 将 EasyPipe 集成到流程中
 - 修改配置测试各种依赖
-### fix
+## fix
