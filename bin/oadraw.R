@@ -747,7 +747,7 @@ if (is.null(opts$plot)) {
   title <- sprintf('\'%s\'', title)
   cmd <-
     paste(
-      'perl',
+      software$perl,
       opts$plot,
       'pca -skipstat T -file',
       tmp_file,
@@ -763,7 +763,7 @@ if (is.null(opts$plot)) {
   outprefix <- paste0(outprefix, '.nonlabs')
   cmd <-
     paste(
-      'perl',
+      software$perl,
       opts$plot,
       'pca -skipstat T -file',
       tmp_file,

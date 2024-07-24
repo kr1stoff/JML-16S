@@ -32,10 +32,15 @@
   - data.table
   - hash
   - Rcpp
+  - reshape2
+  - dplyr
+  - showtext
+  - rjson
 
 - Perl
   - YAML
   - JSON
+  - Config::General
 
 # 更新日志
 20220304

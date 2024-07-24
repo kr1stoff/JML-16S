@@ -7,9 +7,9 @@ dos2unix: /home/mengxf/miniforge3/envs/tools/bin/dos2unix
 activate: /home/mengxf/miniforge3/bin/activate
 deactivate: /home/mengxf/miniforge3/bin/bin/deactivate
 qiime2: /home/jinyu/mambaforge/envs/qiime2-amplicon-2024.2/bin/qiime
-fastp: /home/jinyu/mambaforge/bin/fastp
 biom: /home/jinyu/mambaforge/envs/qiime2-amplicon-2024.2/bin/biom
-fastqc: /home/jinyu/mambaforge/bin/fastqc
+fastp: /home/mengxf/miniforge3/envs/basic/bin/fastp
+fastqc: /home/mengxf/miniforge3/envs/basic/bin/fastqc
 shell: /usr/bin/bash
 parallel: /home/mengxf/miniforge3/envs/tools/bin/parallel
 

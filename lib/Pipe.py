@@ -8,8 +8,8 @@ import logging
 import os
 import os.path
 import sys
-
 import yaml
+from pathlib import Path
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -301,11 +301,16 @@ sed -i "1s,#OTU ID,Lineage,"g {dir_out}/feature.taxonomy.relative/feature-table.
         alpha_content = ["sobs", "simpson", "shannon", "pd", "goods_coverage", "chao", "ace"]
         j_alpha.set_maxjob(len(alpha_content) + 1)
 
+        # FIXME 需要先进环境 c++
+        # R conda env
+        env = Path(self.rscript).parents[1]
         cmd = f"""
+source activate {env}
 {self.rscript} {self.bin}/rarefaction.R -d min -r \\
         -i {d_qiime2}/Denois/rename/feature.table.xls \\
         -t {d_qiime2}/Tree/rooted/tree.nwk \\
         -o {d_alpha}
+conda deactivate
 {self.rscript} {self.bin}/summary_alpha.R {d_alpha}/summary.alpha_diversity.xls {d_prepare}/group.qiime.tsv {d_alpha}
 """
         j_alpha.add_command(cmd)

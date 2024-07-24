@@ -14,7 +14,7 @@ import yaml
 
 #### Some Global variable
 __version__ = '1.0.0'
-logging.basicConfig(level=logging.INFO,
+logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 BIN = os.path.dirname(__file__)
