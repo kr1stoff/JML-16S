@@ -9,8 +9,8 @@
 
 # 依赖
 - python
-    - click
-    - pyyaml
+  - click
+  - pyyaml
   
 - R
   - scales=1.3.0
@@ -48,3 +48,4 @@
 - 将 EasyPipe 集成到流程中
 - 修改配置测试各种依赖
 ## fix
+  
